@@ -1,5 +1,7 @@
-require(['lib/esprima', 'lib/js-yaml.min', 'lib/twig.min'],
-  function(esprima, jsyaml, twig) {
+require.config({ baseUrl: 'lib' });
+
+require(['jquery', 'esprima', 'js-yaml.min', 'twig.min'],
+  function(jquery, esprima, jsyaml, twig) {
     function getRemote(remote_url) {
       xmlhttp = new XMLHttpRequest();
       xmlhttp.open('GET', remote_url, false);
@@ -19,6 +21,6 @@ require(['lib/esprima', 'lib/js-yaml.min', 'lib/twig.min'],
     var template = twig.twig({ data: getRemote('layouts/layout.html') });
     var html = template.render(doc);
 
-    document.documentElement.innerHTML = html;
+    $('body').html(html);
   }
 );
