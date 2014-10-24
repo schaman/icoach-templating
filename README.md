@@ -1,3 +1,3 @@
-Welcome to iCoach templating!
+# iCoach templating
 
-Read the documentation [here](https://github.com/schaman/icoach-templating/wiki)
+[Read the documentation](https://github.com/schaman/icoach-templating/wiki)
