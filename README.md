@@ -1,11 +1,30 @@
 # Creating iCoach offer template with GitHub pages
 
-## Create a template repository
+## Create a GitHub repository for your template
 
-* Using GitHub, create a new repository for your template
+* Using GitHub, create a your own repository for your template
+
+Press a plus button next to your name in github page header, or go right here: https://github.com/new
+
+Name your repository after your template.
+
+Init your repository with readme.
+
+If you see "Quick Setup" that means you forgot to check "Init repository with readme", so now create a README file clicking a link in "We recommend to init with README...".
+
 * Create branch named `gh-pages` in that repository and switch to this branch
+
+Navigate to your repository page at http://github.com/yourname/repositoryname
+
+Press a button **branch: master** and enter `gh-pages` there.
+
 * Go to repository settings and make branch `gh-pages` default
+
+Settings page link is in the right sidebar.
+
 * Create files:
+
+To create a file press plus button next to your repository name.
 
 ### index.html
 This file is not a part of your template, but a templating system itself. It is used to test filling your template with data. You can download it here https://github.com/schaman/icoach-templating-project/blob/gh-pages/index.html and shoudn't change it while developing template.
@@ -21,7 +40,7 @@ This file is not a part of your template, but a templating system itself. It is 
 ```
 
 ### layouts/layout.html
-Contains your template
+Contains your template. For the first testing run you better use this simple one:
 ```
 <!DOCTYPE HTML>
 <html>
@@ -33,6 +52,7 @@ Contains your template
   </body>
 </html>
 ```
+Later you'll replace it with your real template.
 
 ### data.yaml
 Contains some demo data to fill your template while developing
