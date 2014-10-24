@@ -1,4 +1,7 @@
-require.config({ baseUrl: 'http://schaman.github.io/icoach-templating/lib' });
+require.config({
+  baseUrl: 'http://schaman.github.io/icoach-templating/lib',
+  urlArgs: "_=" + (new Date()).getTime()
+});
 
 require(['jquery', 'esprima', 'js-yaml.min', 'twig.min'],
   function(jquery, esprima, jsyaml, twig) {
