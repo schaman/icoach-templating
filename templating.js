@@ -1,4 +1,4 @@
-require.config({ baseUrl: 'lib' });
+require.config({ baseUrl: 'http://schaman.github.io/icoach-templating/lib' });
 
 require(['jquery', 'esprima', 'js-yaml.min', 'twig.min'],
   function(jquery, esprima, jsyaml, twig) {
