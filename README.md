@@ -2,7 +2,7 @@
 
 ## Create a GitHub repository for your template
 
-* Using GitHub, create a your own repository for your template
+### Using GitHub, create a your own repository for your template
 
 Press a plus button next to your name in github page header, or go right here: https://github.com/new
 
@@ -12,17 +12,17 @@ Init your repository with readme.
 
 If you see "Quick Setup" that means you forgot to check "Init repository with readme", so now create a README file clicking a link in "We recommend to init with README...".
 
-* Create branch named `gh-pages` in that repository and switch to this branch
+### Create branch named `gh-pages` in that repository and switch to this branch
 
 Navigate to your repository page at http://github.com/yourname/repositoryname
 
 Press a button **branch: master** and enter `gh-pages` there.
 
-* Go to repository settings and make branch `gh-pages` default
+### Go to repository settings and make branch `gh-pages` default
 
 Settings page link is in the right sidebar.
 
-* Create files:
+### Create files in your repository:
 
 To create a file press plus button next to your repository name.
 
@@ -65,5 +65,9 @@ title: "Hello World!"
 Navigate to http://_yourname_.github.io/_repositoryname_/
 
 If you see "Hello World!" message, that means everything is working fine – your template `layouts/layout.html` is filled with your data from `data.yaml`.
+
+If you have a 404 error this may mean your page is not published yet. It may take up to ten minutes until your page is available.
+
+The full information on using GitHub pages can be found here: https://pages.github.com/
 
 You can change the title in your data to something else, and new title should appear on the resulting page.
