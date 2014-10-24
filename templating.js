@@ -7,7 +7,7 @@ require(['jquery', 'esprima', 'js-yaml.min', 'twig.min'],
   function(jquery, esprima, jsyaml, twig) {
     function getRemote(remote_url) {
       xmlhttp = new XMLHttpRequest();
-      xmlhttp.open('GET', remote_url + '?_=' + new Date.getTime(), false);
+      xmlhttp.open('GET', remote_url + '?_=' + (new Date()).getTime(), false);
       xmlhttp.onreadystatechange = function (oEvent) {  
         if (xmlhttp.readyState === 4) {  
           if (xmlhttp.status === 200) {  
